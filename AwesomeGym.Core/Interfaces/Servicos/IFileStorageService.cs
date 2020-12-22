@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Threading.Tasks;
 
 namespace AwesomeGym.Core.Interfaces.Servicos
 {
     public interface IFileStorageService
     {
+        Task AddFile(byte[] content, string fileName);
     }
 }
