@@ -9,7 +9,12 @@ namespace AwesomeGym.Infrastructure.Persistencia.Repositorios
 {
     public class UnidadeRepository : IUnidadeRepository
     {
-        public Task Add(Unidade unidade)
+        public Task Adicionar(Unidade unidade)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<Unidade>> ObterTodos()
         {
             throw new NotImplementedException();
         }
