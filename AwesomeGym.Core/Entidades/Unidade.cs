@@ -17,8 +17,13 @@ namespace AwesomeGym.Core.Entidades
         public int Id { get; private set; }
         public string Nome { get; private set; }
         public string EnderecoCompleto { get; private set; }
-        public List<Aluno> Alunos { get; private set; }
-        public List<Funcionario> Funcionarios { get; private set; }
-        public List<Equipamento> Equipamentos { get; private set; }
+        public List<Aluno> Alunos { get; set; }
+        public List<Funcionario> Funcionarios { get; set; }
+        public List<Equipamento> Equipamentos { get; set; }
+
+        public void SetId(int id)
+        {
+            Id = id;
+        }
     }
 }

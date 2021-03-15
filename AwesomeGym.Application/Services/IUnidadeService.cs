@@ -7,7 +7,8 @@ namespace AwesomeGym.Application.Services
 {
     public interface IUnidadeService
     {
-        Task Adicionar(UnidadeInputModel unidadeInputModel);
+        Task<int> Adicionar(UnidadeInputModel unidadeInputModel);
         Task<List<UnidadeItemViewModel>> ObterTodos();
+        Task<UnidadeViewModel> ObterPorId(int id);
     }
 }

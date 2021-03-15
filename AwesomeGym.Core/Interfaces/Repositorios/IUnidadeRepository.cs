@@ -6,7 +6,8 @@ namespace AwesomeGym.Core.Interfaces.Repositorios
 {
     public interface IUnidadeRepository
     {
-        Task Adicionar(Unidade unidade);
+        Task<int> Adicionar(Unidade unidade);
         Task<List<Unidade>> ObterTodos();
+        Task<Unidade> ObterPorId(int id);
     }
 }

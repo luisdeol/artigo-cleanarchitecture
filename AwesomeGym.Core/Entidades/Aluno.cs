@@ -6,12 +6,12 @@ namespace AwesomeGym.Core.Entidades
     public class Aluno
     {
         protected Aluno() { }
-        public Aluno(string nomeCompleto, string observacoesMedicas, DateTime dataNascimento, StatusAlunoEnum status)
+        public Aluno(string nomeCompleto, string observacoesMedicas, DateTime dataNascimento)
         {
             NomeCompleto = nomeCompleto;
             ObservacoesMedicas = observacoesMedicas;
             DataNascimento = dataNascimento;
-            Status = status;
+            Status = StatusAlunoEnum.Ativo;
         }
 
         public int Id { get; private set; }
